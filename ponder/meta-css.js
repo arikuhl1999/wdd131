@@ -37,3 +37,14 @@ selectElem.addEventListener('change', function(){
     console.log(codeValue);
     document.getElementById(codeValue).style.color = 'red';
 })
+
+const newPara = document.createElement('p');
+newPara.innerText = "added text here";
+
+// topics.innerHtml = '<p>This is it</p>';
+
+const image = document.querySelector('img');
+image.setAttribute('src', 'html css and js.jpg');
+image.setAttribute('alt', 'new logo with black background');
+
+document.body.className = 'blue';
