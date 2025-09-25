@@ -41,10 +41,11 @@ selectElem.addEventListener('change', function(){
 const newPara = document.createElement('p');
 newPara.innerText = "added text here";
 
-// topics.innerHtml = '<p>This is it</p>';
+const topics = document.querySelector('#topics');
+topics.appendChild(newPara);
 
 const image = document.querySelector('img');
 image.setAttribute('src', 'html css and js.jpg');
-image.setAttribute('alt', 'new logo with black background');
+image.setAttribute('alt', 'new logo with Html, css, and Javasscript logo');
 
 document.body.className = 'blue';
