@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+    background-color: rgb(194, 191, 191);
+    text-align: center;
+    margin: 0 auto;
+}
+
+header {
+    display: flex; /* this displays like flexible */
+    flex-direction: column; /* it goes from left to right to top to bottom */
+    background-color: lightblue; 
+    height: 150px;
+    align-items: center; 
+    justify-content: flex-end;
+}
+
+header h1 {
+    margin: 0 auto;
+    padding: 40px;
+}
+
+nav {
+    display: none;
+    padding-bottom: 10px;
+}
+
+.menu-btn {
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    cursor: pointer; /* helps it know that you can click on it*/
+    font-size: 20px;
+}
+
+.gallery {
+    grid-template-columns: 1fr;
+}
+
+.gallery img {
+    width: 350px;
+    height: auto;
+    margin: 10px;
+    border: 5px solid white;
+    box-shadow: 4px 4px 15px 4px;
+}
+
+footer {
+    background-color: lightblue;
+    padding-top: 5px;
+    height: 50px;
+}
+
+@media screen and (min-width: 700px) {
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    nav {
+        display: block;
+        /* text-align: center; */
+    }
+
+    /* h1 {
+        display: inline;
+    } */
+
+    .menu-btn {
+        display: none;
+    }
+
+}
