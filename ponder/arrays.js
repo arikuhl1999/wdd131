@@ -86,7 +86,7 @@ const students = [
         last: 'Tanda', 
         first: 'Tamanda'
     }
-];
+]
 
 let containter = document.querySelector('#studentContainer');
 
