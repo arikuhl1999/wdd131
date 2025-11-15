@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+    <div class="title-logo">
+        <!-- name with logo -->
+        <img id="logo" src="recipe-favicon.png" alt="recipe icon"></img>                   
+        <h1 id="title">RecipeBook</h1>
+        <!-- <a href="images/recipe-book.png" title="RecipeBookLogo"></a> -->
+    </div>         
+
+    <div class="search-bar">
+        <!-- Search bar  with the logo-->
+        <input type="text" placeholder="Find a recipe">
+        <img id="search-logo" src="images/search.svg" alt="search image">
+    </div>
+    <div id="recipe-with-rating">
+        <div class="recipes">
+            <img id="apple" src="images/apple-crisp.jpg" alt="apple crisp with ice cream">
+        </div>
+        
+        <div id="button">
+            <button id="dessert">dessert</button>
+        </div>
+
+        <h2 id="apple-dessert">Apple Crisp</h2>
+        
+        <div class="stars">
+            <span
+                class="rating"
+                role="img"
+                aria-label="Rating: 4 out of 5 stars"
+                >
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">☆</span>
+            </span>
+        </div>
+    </div>
+    <div class="social-media">
+        <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Your Title">
+        <meta property="og:description" content="Your Description">
+        <meta property="og:url" content="Your URL">
+        <meta property="og:image" content="social-preview-image.png">
+
+        <!-- X Card -->
+        <meta name="twitter:card" content="Social Preview Image">
+        <meta name="twitter:title" content="Your Title">
+        <meta name="twitter:description" content="Your Description">
+        <meta name="twitter:image" content="social-preview-image.png">
+    </div>
+
+    <div class="favicon">
+        <!-- One favicon (ICO works everywhere) -->
+        <link rel="icon" href="/favicon.ico">
+    </div>
+
+    <div class="apple-touch-icon">
+        <!-- One Apple Touch Icon (iOS home screen) -->
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    </div>             
+
+    <div class="social-freepik">
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>       
+        
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+    </div>
+
+</body>
+</html>
