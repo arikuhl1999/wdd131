@@ -14,7 +14,7 @@
 
 .search-bar {
     display: flex;
-    width: 300px;
+    width: 84%;
     height: 30px;
     justify-items: center;
     margin: 0 auto;
@@ -25,9 +25,13 @@
 }
 
 .search-bar input {
-    width: 500px;
+    width: 100%;
     border: none;
     border-right: 2px solid grey;
+}
+
+#para-apple {
+    display: none;
 }
 
 .search-bar img {
@@ -36,11 +40,14 @@
 
 #recipe-with-rating {
     display: flex;
-    border: 2px solid black;
+    border: 2px solid grey;
     flex-direction: column;
-    max-width: fit-content;
+    /* max-width: fit-content; */
+    width: 84%;
     border-radius: 2px;
     margin: 0 auto;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .recipes img {
@@ -67,5 +74,23 @@ h2 {
 
 .social-freepik {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
+@media screen and (min-width: 700px) {
+   #recipe-with-rating {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   } 
+
+    #para-apple {
+        display: inline;
+    }
+
+    .social-freepik {
+        margin: 10px auto;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
