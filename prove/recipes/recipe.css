@@ -55,6 +55,8 @@
     height: 300px;
     padding: 5px;
     justify-content: center;
+    margin: 0 auto;
+    display: block;
 }
 
 h2 {
@@ -81,9 +83,8 @@ h2 {
 @media screen and (min-width: 700px) {
    #recipe-with-rating {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
    } 
-
     #para-apple {
         display: inline;
     }
