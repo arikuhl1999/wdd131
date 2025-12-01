@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services We Offer</title>
+    <link rel="stylesheet" href="style-services/service.css">
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+        <img class="logo" src="logo.png" alt=" logo of a cart with Kuhlmann Cleaning Service">
+        </a>
+        <nav>
+            <a href="services-we-offer.html">Services We Offer</a>
+            <a href="index.html">Home</a>
+            <a href="about-the-company.html">About The Company</a>
+            <!-- <a href="site-plan.html"> Site Plan</a>
+            <a href="contactus.html">Contact Us</a> -->
+        </nav>
+    </header>
+    <div id="top-image">
+        <div id="topimage-box">
+            <img id="service-offer-image-img" src="images/home2.jpg" alt="window and floor">
+        </div>
+        <section id="top-message">
+            <h1 class="message-on-image">Kuhlmann Cleaning Service offers a wide range of services to meet our customer's needs.</h1>
+            <h4>We provide home, office, and commerical cleaning</h4>
+        </section>
+    </div>
+    <main>
+        <div class="slideshow-container">
+            <div class="myslides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/mopping.jpg" style="width: 100%" alt=" picture of an employee mopping">
+                <div class="text">Employee Mopping</div>
+            </div>
+            <div class="myslides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/office.jpg" style="width: 100%" alt="picture of office and chairs">
+                <div class="text">Office Clean</div>
+            </div>
+            <div class="myslides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/living-room.jpg" style="width: 100%" alt="picture of part of a living room">
+                <div class="text">Part of a living Room</div>
+            </div>
+            <div class="myslides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/house.jpg" style="width: 100%" alt="picture of a living room">
+                <div class="text">Living Room</div>
+            </div>
+            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <section class="paragraph">
+            <p>Kuhlmann Cleaning Service offers a wide range of services to meet our customer's needs.<br>
+                We provide home, office, and commercial cleaning. <br>
+                We also provide detailed cleaning that includes carpet, power washing, stripping and waxing floors, and construction cleanup. <br>
+                Whether you need a one-time clean or a regular scheduled clean, we can meet your needs. <br>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p> Ari's Kuhlmann Cleaning Service &copy; 2023 - Ari Kuhlmann</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social-links-logos">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+    
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("myslides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>

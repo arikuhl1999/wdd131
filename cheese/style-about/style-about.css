@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Noto+Serif&family=Quicksand&family=Raleway:wght@100;400&family=Roboto+Mono:wght@100&display=swap');
+
+:root{
+  --heading-font: "Lobster";
+  --paragraph-font: "Lobster", Serif;
+}
+
+#content{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+body{
+  margin: 0;
+}
+
+h2{
+  margin-top: 25px;
+  text-align: center;
+  margin-left: 35px;
+  margin-top: 5%;
+}
+
+header{
+  background-color: rgba(0,0,0,0.5);
+  color: #0EA57D;
+  display: grid;
+  grid-template-columns: 160px auto;
+  font-family: "Raleway";
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  font-size: x-large;
+}
+
+nav a{
+  text-align: center;
+  color: #fcfcfc;
+  text-decoration: none;
+  padding: 35px;
+}
+
+nav a:hover{
+  background-color: #0FA8A1;
+  color: #1A6073;
+  text-decoration: underline;
+}
+
+.logo{
+  width: 80px;
+  display: inline;
+  margin-right: auto;
+}
+
+#logo_link{
+  padding-top: 5px;
+  justify-content: center;
+  align-self: center;
+}
+
+#Kuhlmann{
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr; */
+  margin-top: -100px;
+}
+
+#Kuhlmann-box{
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1; 
+}
+
+#Kuhlmann-img{
+  width: 1385px;
+  height: 500px;
+  width: 100%;
+}
+
+#Kuhlmann-msg{
+  grid-column: 2/3;
+  grid-row: 1;
+  font-size: 15px;
+  margin-top: 20%;
+  font-family: "raleway";
+  text-align: center;
+  color: #1A6073;
+  /* margin-right: 25%; */
+  background-color: rgba(233, 233, 228, 0.911)
+}
+
+#about-the-company-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+}
+
+#images{
+  grid-column: 1/2;
+  text-align: center;
+  align-self: center;
+}
+
+.living-room {
+  width: 100%;
+}
+
+
+#about-comp-text {
+  grid-column: 2/3;
+  grid-row: 1;
+  align-self: center;
+  padding: 0 10px;
+}
+
+#about-comp-text h2{
+  font-size: 3.5em;
+}
+
+#about-comp-text p{
+  font-size: 2em;
+}
+
+
+.what-we-cleaned{
+  margin-left: 35px;
+  margin-top: 5%;
+  grid-column: 2/4;
+  color: #780E0E;
+}
+
+.cleaned-paragraph{
+  text-align: center;
+  color: #1A6073;
+}
+
+.about-owner-paragraph{
+  text-align: center;
+  grid-column: 2/4;
+  grid-row: 2;
+  color: #780E0E;
+}
+
+
+
+.owner{
+  grid-column: 3/4;
+  text-align: center;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.dad-and-mum-pic{
+  width: 100%;
+}
+
+
+
+footer{ 
+  background-color: #780E0E;
+  color: #fcfcfc;
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p{
+  font-size: 1.2em;
+}
+
+footer p a:hover{
+  text-decoration: underline;
+}
+
+footer a{
+  color: #fcfcfc;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: #0EA57D;
+}
+
+footer img{
+  display: inline;
+  margin: auto;
+  width: 50px;
+  padding-top: 15px;
+}
+
+/* @media only screen and (max-width: 300px) {
+  #Kuhlmann-msg{
+    display: ;
+  }
+} */

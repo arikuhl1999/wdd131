@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Noto+Serif&family=Quicksand&family=Raleway:wght@100;400&family=Roboto+Mono:wght@100&display=swap');
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 900px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #780E0E;
+    border-radius: 1em;
+  }
+
+  .background-image{
+    /* The image used */
+    background-image: url("../images/living-room2.avif");
+  
+    /* Control the height of the image */
+    min-height: 500px;
+    /* max-width: fit-content; */
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  p{
+    color: black;
+    font: 1.6em lobster;
+    text-align: center;
+    margin-bottom: 5%;
+
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    color: #780E0E;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+    color: #09513e;
+  
+    /* Uniform text field size */
+    width: 800px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 2px solid #0EA57D;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #0EA57D;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+ 
+#feedback {
+    background-color: #0FA8A1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
