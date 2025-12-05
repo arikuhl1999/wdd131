@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Noto+Serif&family=Quicksand&family=Raleway:wght@100;400&family=Roboto+Mono:wght@100&display=swap');
+
+:root{
+  --heading-font: "Lobster";
+  --paragraph-font: "Lobster", Serif;
+}
+
+#content{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+body{
+  margin: 0;
+}
+
+h2{
+  margin-top: 25px;
+  text-align: center;
+  margin-left: 35px;
+  margin-top: 5%;
+}
+
+.header{
+  background-color: rgba(0,0,0,0.5);
+  color: #0EA57D;
+  display: grid;
+  grid-template-columns: 160px auto;
+  font-family: "Raleway";
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  font-size: x-large;
+}
+
+nav a{
+  text-align: center;
+  color: #fcfcfc;
+  text-decoration: none;
+  padding: 35px;
+}
+
+nav a:hover{
+  background-color: #0FA8A1;
+  color: #1A6073;
+  text-decoration: underline;
+}
+
+.logo{
+  width: 80px;
+  display: inline;
+  margin-right: auto;
+}
+
+#logo_link{
+  padding-top: 5px;
+  justify-content: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 700px) {
+  /* .text {font-size: 11px} */
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  nav {
+    text-align: center;
+    /* display: flex; */
+    flex-direction: row;
+  }
+
+  nav a {
+    /* display: inline; */
+    border: none;
+    text-align: right;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .hide {
+    display: block;
+  }
+
+}
