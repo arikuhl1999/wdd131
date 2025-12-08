@@ -20,8 +20,8 @@
             <h4>We provide home, office, and commerical cleaning</h4>
         </section>
     </div>
-    <main>
-        <div class="slideshow-container">
+    <main id="main-page-content" role="main">
+        <!-- <div class="slideshow-container">
             <div class="myslides fade">
                 <div class="numbertext">1 / 4</div>
                 <img src="images/mopping.jpg" style="width: 100%" alt=" picture of an employee mopping">
@@ -41,17 +41,54 @@
                 <div class="numbertext">4 / 4</div>
                 <img src="images/house.jpg" style="width: 100%" alt="picture of a living room">
                 <div class="text">Living Room</div>
-            </div>
+            </div> -->
             <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-        </div>
-        <br>
-        <div style="text-align:center">
+        <!-- </div> -->
+
+        <!-- <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
+        </div> -->
+        
+        <!-- new one to go with responsive side of things-->
+        <h1>Gallery</h1>
+        <section class="gallery" aria-label="services">
+            <!-- <figure>   -->
+                <!-- <img src="images/mopping.jpg" alt=" picture of an employee mopping"> -->
+                <!-- <div class="text">Employee Mopping</div> -->
+            <!-- </figure> -->
+            <!-- <figure>  
+                <img src="images/powerwashing.jpg" style="width: 100%" alt="picture of powerwashing">
+                <div class="text">Powerwashing</div>
+            </figure> -->
+            <!-- <figure>  
+                <img src="images/house.jpg" style="width: 100%" alt="picture of a living room">
+                <div class="text">Living Room</div>
+            </figure> -->
+            <!-- <figure>  
+                <img src="images/carpet-cleaning.jpg" style="width: 100%" alt="picture of a carpet cleaning machine">
+                <div class="text">Carpet Cleaning</div>
+            </figure> -->
+            <!-- <figure>   -->
+                <!-- <img src="images/lawn.jpg" alt="picture of a lawnmower, shovel, and push broom"> -->
+                <!-- <div class="text">Lawn work</div> -->
+            <!-- </figure> -->
+            <!-- <figure>
+                <img src="images/strip-wax-floor.jpg" style="width: 100%" alt="picture of stripping and waxing a floor">
+            </figure> -->
+            <!-- <figure>
+                <img src="images/window-floor.jpg" style="width: 100%" alt="picture of window and the floor with a ladder off to the right">
+            </figure> -->
+        </section>
+        <dialog>
+            <img>
+            <button class="close-viewer">X</button>
+        </dialog>
+
+        <br>
         <section class="paragraph">
             <p>Kuhlmann Cleaning Service offers a wide range of services to meet our customer's needs.<br>
                 We provide home, office, and commercial cleaning. <br>
@@ -79,13 +116,13 @@
         </div>
     </footer>
 
-    <script>
+    <!-- <script>
         let slideIndex = 0;
         showSlides();
         
         function showSlides() {
           let i;
-          let slides = document.getElementsByClassName("myslides");
+          let slides = document.getElementsByClassName("myislides");
           let dots = document.getElementsByClassName("dot");
           for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";  
@@ -99,6 +136,6 @@
           dots[slideIndex-1].className += " active";
           setTimeout(showSlides, 5000); // Change image every 2 seconds
         }
-    </script>
+    </script> -->
 </body>
 </html>
