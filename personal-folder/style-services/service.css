@@ -99,7 +99,7 @@ h4 {
 dialog {
   border: none;
   border-radius: 12px;
-  padding: 0;
+  padding: 20px;
   width: 90%;
   height: 90%;   
   max-width: 800px;    
