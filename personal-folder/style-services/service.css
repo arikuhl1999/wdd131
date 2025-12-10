@@ -1,151 +1,158 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Noto+Serif&family=Quicksand&family=Raleway:wght@100;400&family=Roboto+Mono:wght@100&display=swap');
 
-:root{
+:root {
   --heading-font: "Noto";
   --paragraph-font: "Lobster", Serif;
 }
 
-#content{
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-body{
+body {
   margin: 0;
 }
 
-/* #top-image{
-  z-index: -4;
-} */
+/* ===========================
+   HERO IMAGE + HEADER MESSAGE
+=========================== */
 
-#service-offer-image-img{
+#top-image {
+  position: relative;
   width: 100%;
-  margin-top: -250px;
-  z-index: -1;
+  height: 350px;
+  overflow: hidden;
+}
+
+#service-offer-image-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(60%);
+}
+
+#top-message {
   position: absolute;
-}
-
-#top-message{
-  text-align: center;
-  color: #0FA8A1;
-  font-size:xx-large;
-}
-
-.message-on-image{
-  margin-top: 150px;
-  margin-bottom: 30px;
-  font-family: "Noto";
-  font-size: 40px;
-}
-
-h4{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fcfcfc;
-  margin-top: 60px;
-  font-family: "Raleway";
-  font-size: 35px;
-}
-
-.paragraph{
   text-align: center;
-  font-size: xx-large;
-  color: #780E0E;
 }
 
-/* main {
+.message-on-image {
+  font-family: "Noto";
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-family: "Raleway";
+  font-size: 24px;
+  margin: 0;
+}
+
+/* ===========================
+   PARAGRAPH SECTION
+=========================== */
+
+.paragraph {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #780E0E;
+  margin-top: 60px;
+  padding: 0 2rem;
+}
+
+/* ===========================
+   GALLERY GRID
+=========================== */
+
+.gallery {
+  padding: 2rem;
   display: grid;
   grid-template-columns: 1fr;
-} */
-
-/* Slideshow container */
-/* .slideshow-container {
-  max-width: 30%;
-  position: relative;
-  margin: auto;
-
+  gap: 40px;
+  margin-top: 40px;
 }
 
-/* Caption text */
-/* .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+.gallery .service img {
+  max-width: 400px;
+}
+
+.gallery h2 {
+  color: #b30059;
+  font-size: 1.5rem;
   text-align: center;
-} */
-
-/* Number text (1/3 etc) */
-/* .numbertext {
-  color: #780E0E;
-  font-size: 14px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-} */
-
-/* The dots/bullets/indicators */
-/* .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  margin: 20px 0;
 }
 
-.active {
-  background-color: #717171;
-} */
-
-/* Fading animation */
-/* .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-} */ 
-
-
-h1 {
-    text-align: center;
-    margin: 35px 0;
+.gallery img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+  margin: 0 auto;
+  cursor: pointer;
 }
-.gallery {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-figure img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    padding: 5px;
-    background-color: white;
-    box-shadow: 5px 5px 15px black;
-    display: block;
-    margin: 0 auto;
-}
-/* modal */
 
+/* ===========================
+   MODAL
+=========================== */
+
+dialog {
+  border: none;
+  border-radius: 12px;
+  padding: 0;
+  width: 90%;
+  height: 90%;   
+  max-width: 800px;    
+  max-height: 800px;    
+  position: relative;
+}
 
 dialog img {
-    width: 90%;
-    display: block;
-    margin: 20vh auto;
-}
-dialog {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.75);
-}
-.close-viewer {
-    position: absolute;
-    top: 10vh;
-    right: 2vh;
-    padding: 3px 6px;
-    font-size: 1.5em;
+  width: 100%;   
+  height: auto;    
+  display: block;
+  border-radius: 12px 12px 0 0; 
 }
 
-footer{ 
+.close-viewer {
+  margin-top: 15px;
+  padding: 8px 15px;
+  background: #780E0E;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.close-viewer:hover {
+  background: #b30059;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (min-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
   background-color: #780E0E;
   color: #fcfcfc;
   padding: 25px 50px;
@@ -155,53 +162,22 @@ footer{
   align-items: center;
 }
 
-footer p{
+footer p {
   font-size: 1.2em;
 }
 
-footer p a:hover{
-  text-decoration: underline;
-}
-
-footer a{
+footer a {
   color: #fcfcfc;
   text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
   color: #0EA57D;
 }
 
-footer img{
+footer img {
   display: inline;
   margin: auto;
   width: 50px;
   padding-top: 15px;
-}
-
-@media screen and (min-width: 700px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media screen and (min-width: 1000px) {
-    .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    dialog img {
-        width: 60%;
-        margin: 15vh auto;
-    }
-    .close-viewer {
-        position: absolute;
-        right: 15vh;
-    }
-    .viewer {
-        margin: 50px;
-        padding: 50px;
-    }
-    .viewer img {
-        max-width: 800px;
-    }
 }
